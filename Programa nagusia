@@ -2,7 +2,7 @@ import serial
 import time
 import matplotlib.pyplot as plt
 
-name="abuelita2"   #Sortutako fitxategientzat
+name="izena"   #Sortutako fitxategientzat
 denbora=1   #Minututan
 
 #Funtzioak:
