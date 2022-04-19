@@ -13,8 +13,8 @@ Serial.println('!');
 }
 else{
 // send the value of analog input 0:
-Serial.print(millis());
-Serial.print("sep");
+Serial.print(millis());     //Milisegunduak erregistratzeko
+Serial.print("sep");        //Denbora eta Voltaiaren neurketak banatzeko 
 Serial.print(analogRead(A0));
 Serial.print("\n");
 }
