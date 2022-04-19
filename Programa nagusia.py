@@ -2,25 +2,24 @@ import serial
 import time
 import matplotlib.pyplot as plt
 
-name="izena"   #Sortutako fitxategientzat
-denbora=1   #Minututan
+name="_00_"   #Sortuko diren fitxategiak izendatzeko.
+denbora=1      #Neurketak iraungo duen denbora, minututan.
 
-#Funtzioak:
 def datuak_irudikatu():
     plt.plot(data.keys(),data.values())
     plt.xlabel('Denbora (ms)')
     plt.ylabel('Voltaia (mV)')
-    plt.title(' Sentsorearen irakurketa vs. Denbora')
+    plt.title('Sentsorearen irakurketa vs. Denbora')
     plt.show()
 
 def taupada_irudikatu():
     plt.plot(RR_d.keys(),RR_d.values())
     plt.xlabel('Taupada')
     plt.ylabel('RR (ms)')
-    plt.title(' RR vs. Taupadak')
+    plt.title('RR vs. Taupadak')
     plt.show()
 
-def taupada_kalkulatu(t): #taupada/minutuko ematen du honek!
+def taupada_kalkulatu(t):       #Honek taupadak/minutu kalkulatzen ditu.
     global taupada_zaharra
     taupada_berria=t
     dif=taupada_berria-taupada_zaharra
@@ -28,18 +27,20 @@ def taupada_kalkulatu(t): #taupada/minutuko ematen du honek!
     taupada_zaharra=taupada_berria
     return BPM
 
-def RR_kalkulatu(t): #RR msec-tan ematen du honek!
+def RR_kalkulatu(t):            #Honek RR milisegundutan ematen du.
     global taupada_zaharra
     taupada_berria=t
     RR=taupada_berria-taupada_zaharra
     taupada_zaharra=taupada_berria
     return RR
     
+    
+#Zati honek arduinoaren informazioa programara ekartzen du.---------------------------------------------------------------------------
+#Internetetik hartutakoa delako dago inglesez.
 
 # set up the serial line
 ser = serial.Serial('COM5', 9600)
 time.sleep(3)
-
 
 # Read and record the data
 data =dict()                      # empty list to store the data
@@ -47,7 +48,7 @@ trigger=True
 
 ft=1
 while ft<denbora*60000:
-    print(ft/1000)                #Segunduak inprimatu
+    print(ft/1000)                 #Segunduak inprimatu
     try:
         b = ser.readline()         # read a byte string
         string_n = b.decode()      # decode byte string into Unicode  
@@ -66,8 +67,10 @@ while ft<denbora*60000:
     #time.sleep(0.1)           # wait (sleep) 0.1 seconds
 
 ser.close()
+#-----------------------------------------------------------------------------------------------------------------------------------------
+ 
+#Neurketa guztiak testu fitxategi batean gordeko dira. Zutabe batean denbora, bestean voltaia.
 
-# show the data
 with open("data"+name+".txt", "w") as f1:
     for t,v in data.items():
         s=f"{t:10}   {v:10}\n"
@@ -78,16 +81,15 @@ print("Neurketa guztiak hartuta")
 
 datuak_irudikatu()
 
+#RR-ren kalkulua:
 
-
-#RR-ren kalkulua
-muga=550
+muga=550                 #Proba batzuk egin ondoren eta ajustatuz, balio egokia lortzen da.
 muga_azpitik=True
 taupada_zaharra=0.0001
 k=0
 RR_d=dict()
 
-with open("RR"+name+".txt", "w") as f2:
+with open("RR"+name+".txt", "w") as f2:    #Taupaden arteko denbora erregistratuko da.
     for t,v in data.items():
         if v>muga and muga_azpitik==True:
             muga_azpitik=False
