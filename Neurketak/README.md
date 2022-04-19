@@ -1,6 +1,6 @@
 # Edukiak
 
-Saiakuntzaren atal bakoitzean lortutako datuez osatutako fitxategiak bilduta daude hemen. Neurketa bakoitzeko bi fitxategi sortzen ditu programa nagusiak: "data__.txt" eta "RR__.txt". Hauei dagozkie neurketa bikote bakoitza:
+Saiakuntzaren atal bakoitzean lortutako datuez osatutako fitxategiak bilduta daude hemen. Neurketa bakoitzeko bi fitxategi sortzen ditu programa nagusiak: "data__.txt" eta "RR__.txt". Hauei dagokie neurketa bikote bakoitza:
 
 1. Elektrokardiograma tipikoa, etzanda. 
 2. Etzanda eta zutik hartutako neurketak, konparatzeko.
