@@ -1,5 +1,5 @@
 # TEIII-Elektrokardiograma
-Teknika Esperimentalak III irakasgaiko proiektuaren osagarria da hau. Lan horretako neurketak hartzeko, datuak prozesatzeko eta grafikoak sortzeko baliabide ezberdinak bilduta daude hemen. Pythoneko kodea nik idatzitakoa da.
+Teknika Esperimentalak III irakasgaiko proiektuaren osagarria da hau. Neurketak hartzeko, datuak prozesatzeko eta grafikoak sortzeko baliabide ezberdinak bilduta daude hemen. Pythoneko kodea nik idatzitakoa da.
 
 <br />
 <br />
