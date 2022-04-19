@@ -3,4 +3,4 @@ Teknika Esperimentalak III irakasgaiko proiektuaren osagarria. Lan horretako neu
 
 
 
-![EKG_readme](https://user-images.githubusercontent.com/101325625/163989600-c80dacea-bd52-4801-b822-47c809a6ee69.png| width=100)
+![EKG_readme](https://user-images.githubusercontent.com/101325625/163989600-c80dacea-bd52-4801-b822-47c809a6ee69.png | width=100)
