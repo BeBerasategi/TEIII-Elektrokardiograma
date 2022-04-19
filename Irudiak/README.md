@@ -1,6 +1,6 @@
 # Irudiak
 
-Proiektuan erabilitako irudiak.
+Proiektuan erabilitako irudiak, guztiak nire neurketekin lortutako datuekin sortutakoak.
 
 ![p1_1](https://user-images.githubusercontent.com/101325625/163996501-c640bec2-6af9-41af-9b29-7e197d1266f4.svg)
 ![p1_2](https://user-images.githubusercontent.com/101325625/163996506-f2c98baa-b996-4310-9ef2-22f6c18e2113.svg)
