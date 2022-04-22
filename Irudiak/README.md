@@ -7,7 +7,7 @@ Proiektuan erabilitako irudiak, guztiak nire neurketekin lortutako datuekin sort
 ![p_ablt1](https://user-images.githubusercontent.com/101325625/163996635-b8ec41e6-a0c7-497b-b096-c3491359f11b.svg)
 ![p_ablt2](https://user-images.githubusercontent.com/101325625/163996638-c2104598-ee99-42aa-890a-fa341d00d882.svg)
 ![p_abltRR](https://user-images.githubusercontent.com/101325625/163996639-ea376c46-9560-4554-9768-48e46edf10a7.svg)
-![p2](https://user-images.githubusercontent.com/101325625/163996749-cafe2efe-5d4b-4db9-bab2-7e1dd9471bdc.svg)
+![p2](https://user-images.githubusercontent.com/101325625/164749783-53689fd8-1708-4375-9f2b-26b3ecfda7db.png)
 ![p4_0](https://user-images.githubusercontent.com/101325625/163996821-9d22b562-6dbc-4638-8069-f48699b911c3.svg)
 ![p4](https://user-images.githubusercontent.com/101325625/163997249-a18f3591-11e6-440f-a41a-071a17fe2b66.svg)
 ![p4_1](https://user-images.githubusercontent.com/101325625/163996828-989dc9bd-ed74-41d9-80a0-884f4a7b7d98.svg)
